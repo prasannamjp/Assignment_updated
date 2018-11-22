@@ -1,0 +1,155 @@
+<html>
+	<style>
+
+
+  		table, th, td {
+    		border: 1px solid black;
+    		border-collapse: collapse;
+		}  
+		th,td{
+			padding:20px;
+		}
+
+#mydiv{
+	transform: rotate(-90deg);
+	position: absolute;
+	bottom: 0px;
+}
+.barcontainer {
+  position:absolute;
+  border: 3px solid black;
+  width:40%;
+  margin-left: 6%;
+  height: 40%;
+}
+
+.barcontainerheader {
+  position: absolute;
+  width: 100%;
+  padding-top: 3px;
+  background: #663399;
+  color: red;
+  text-align: center;
+}
+
+.bar {
+  position: absolute;
+  bottom:0;
+  border: 1px solid black;
+  background:green;
+  width: 10%;
+  text-align: center;
+  color: white;
+  
+}
+
+.barlabel {
+  position: absolute;
+  border-top: 2px solid black;
+  background:blue;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.bar:nth-child(2) {
+  left: 0%;
+}
+
+.bar:nth-child(3) {
+  left: 15%;
+}
+
+.bar:nth-child(4) {
+  left: 30%;
+}
+
+.bar:nth-child(5) {
+  left: 45%;
+}
+
+.bar:nth-child(6) {
+  left: 60%;
+
+}
+	</style>
+
+<body>
+	<h1><u> Customers  order details</u></h1>
+		<table>
+			<caption><strong>Table name: Customers order details</strong></caption>
+			<tr>
+				<th>Orders</th>
+				<th>Count of customers</th>
+			</tr>
+
+			<tr>
+				<td>1</td>
+				<td>11 customers ordered only once.</td>
+			</tr>
+			
+			<tr>
+				<td>2</td>
+				<td>9  customers ordered exactly twice.</td>
+			</tr>
+			
+			<tr>
+				<td>3</td>
+				<td>10 custommers ordered exactly three times.</td> 	
+			</tr>
+
+			<tr>
+				<td>4</td>
+				<td>8 customers ordered exactly four times.</td>
+			</tr>
+
+			<tr>
+				<td>+5</td>
+				<td>8 customers ordered for five or more than five times.</td>
+			</tr>	
+		
+	</table>
+	<h1><u>customers order Bargraph</u></h1>
+	<div id ="mydiv">Count of Customers</div>
+	<div  class='barcontainer'>
+      <div class='barcontainerheader'>
+        Bar Graph
+      </div>
+      <div class='bar' style='height:100%'>
+        11
+        <div class='barlabel'>
+          1
+        </div>
+      </div>
+      <div class='bar' style='height: 80%'>
+        9
+        <div class='barlabel'>
+          2
+        </div>
+      </div>
+      <div class='bar' style='height: 90%'>
+        10
+        <div class='barlabel'>
+          3
+        </div>
+      </div>
+      <div class='bar' style='height:70%'>
+        8
+        <div class='barlabel'>
+          4 </div>
+      </div>
+      <div class='bar' style='height:70%'>
+        8
+        <div class='barlabel'>
+          5+
+        </div>
+      </div>
+    </div>
+
+<div style="position:absolute; bottom:-130px; left:200px;">Orders</div>
+
+
+</body>
+
+
+</html>
